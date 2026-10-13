@@ -1,35 +1,89 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>College Event Dash board</title>
-        <style>
-            header{
-                display: grid;
-                    
-                text-align:center;
-                background-color: aqua;
+<head>
+    <title>College Event Management</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f2f2f2;
+        }
 
-                }
-            .Box{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 1px;;
-                padding: 20px;
-                }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h2>College event dash board</h2>
-        </header>
-        <div class="header">
-            <div class="Box">Upcoming events</div>
-            <div class="Box">Event categories</div>
-            <div class="Box">Event images</div>
-            <div class="Box">Venue</div>
-            <div class="Box">Date information</div>
-            <div class="Box">Registration button</div>  
-            <div class="Box">footer</div> 
+        header {
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .event {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+        }
+
+        button {
+            background: navy;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>College Event Management</h1>
+        <p>Explore and Register for Events</p>
+    </header>
+
+    <div class="container">
+        <div class="event">
+            <h2>Upcoming events</h2>
+            <p>Date: 20 October</p>
+            <button>Register</button>
         </div>
-    </body>
+
+        <div class="event">
+            <h2>event categories</h2>
+            <p>Date: 25 October</p>
+            <button>Register</button>
+        </div>
+
+        <div class="event">
+            <h2>event images</h2>
+            <p>Date: 30 October</p>
+            <button>Register</button>
+        </div>
+        <div class="event">
+            <h2>venue</h2>
+            <p>Date: 30 October</p>
+            <button>Register</button>
+        </div>
+        <div class="event">
+            <h2>date information</h2>
+            <p>Date: 30 October</p>
+            <button>Register</button>
+        </div>
+        <div class="event">
+            <h2>registration</h2>
+            <p>Date: 30 October</p>
+            <button>Register</button>
+        </div>
+    </div>
+
+</body>
 </html>
